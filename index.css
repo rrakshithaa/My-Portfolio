@@ -13,7 +13,7 @@ nav {
 }
 
 body {
-    background-color: #07b1d3;
+    background-color: #0b2946;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@ ul, ol, .strong{
 
 h1{
     color: white;
-    text-shadow: 5px 5px 10px rgba(2, 2, 2, 1);
+    text-shadow: 10px 10px 10px rgba(2, 2, 2, 1);
     font-family: 'ui-sans-serif', sans-serif; font-size: 40px;
 }
 
@@ -54,8 +54,8 @@ h2{
 
 h3, h4{
     color: white;
-    text-shadow: 5px 5px 10px rgba(2, 2, 2, 1);
-    font-family: 'Arial', sans-serif; font-size: 16px;
+    text-shadow: 7px 7px 13px rgba(2, 2, 2, 1);
+    font-family:'ui-sans-serif', sans-serif; font-size: 16px;
 }
 
 ul,ol{
@@ -80,20 +80,7 @@ ul,ol{
     right: 40px;
     top: 50px;
 }
-.cloud3{
-    position: absolute;
-    height: 70px;
-    width: 100px;
-    top: 200px;
-    left: 350px;
-}
-.cloud4{
-    position: absolute;
-    height: 100px;
-    width: 130px;
-    right: 350px;
-    top: 200px;
-}
+
 .parent{
 height: 75vh; 
 display: flex;
@@ -101,8 +88,8 @@ justify-content: center;
 align-items: center;
 }
 .child{
-    display: block;
-   
+    display:block;
+    font-size: 100px;
     text-align: center;
 }
 .mountain{
@@ -177,31 +164,97 @@ hr{
     transition: all 0.5s;
 }
 
-.doc
 
 /* mobile phones */
-@media (max-width:1000px){
-    .cloud3,.cloud4,.cloud2{
+@media (max-width: 1000px) {
+    .cloud1,.cloud3, .cloud4, .cloud2 {
         display: none;
     }
-    .parent{
-        height: 50vh;
+
+    nav {
+        height: 70px;
+        background-size: cover;
     }
-    .mountain{
-        padding-top: 30px;
+
+    .parent {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
     }
-    hr{
+
+    .mountain {
+        padding-top: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    hr {
         width: 80%;
     }
-    .img_and_text{
-        width: 80%;
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
-    .myintro{
-        font-size: 15px;
+
+    .img_and_text {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-    .intro img:hover{
-        height: 150px;
-        width: 150px;
-    
+
+    .intro img {
+        height: 120px;
+        width: 120px;
+        margin: 0;
+        display: none;
     }
+
+    .intro img:hover {
+        height: 140px;
+        width: 140px;
+        transition: all 0.5s;
     }
+
+    .myintro {
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .bottom_nav {
+        flex-direction: row;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .doc {
+        height: 40px;
+        width: 40px;
+    }
+
+    .doc:hover {
+        height: 60px;
+        width: 60px;
+        transition: all 0.5s;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    ul, ol {
+        padding: 0 20px;
+        text-align: left;
+    }
+}
